@@ -6,7 +6,7 @@ export interface Pet {
   animal: Animal;
   description: string;
   breed: string;
-  image: string[];
+  images: string[];
   city: string;
   state: string;
 }
@@ -17,6 +17,11 @@ export interface PetAPIResponse {
   endIndex: number;
   hasNext: boolean;
   pets: Pet[];
+}
+
+export interface BreedListAPIResponse {
+  animal: Animal;
+  breeds: string[];
 }
 
 
